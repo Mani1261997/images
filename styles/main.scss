@@ -1,0 +1,84 @@
+header{
+    background-image: url(../styles/images/beery.jpg);
+    height: 500px;
+    position: relative;
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+.navbar{
+    background-color: transparent;
+}
+.navbar a:hover{
+    background-color: rgba(199, 25, 19, 0.5);
+    color: whitesmoke;
+
+}
+.navbar-brand{
+    color: whitesmoke;
+    font-size: 50px;
+    font-weight: 600;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.navbar-nav .nav-link{
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 400;    
+}
+.header-title{
+  
+    &__h1{
+        color: white;
+        font-size: 30px;
+    }
+    &__p{
+        color: white;
+        font-size: 20px;
+    }
+}
+
+.card-columns {
+    @include media-breakpoint-only(xl){
+        column-count: 4;
+    }
+    @include media-breakpoint-only(lg){
+        column-count: 3;
+    }
+    @include media-breakpoint-only(md){
+        column-count: 2;
+    }
+    @include media-breakpoint-only(sm){
+        column-count: 2;
+    }
+}
+main{
+    .col{
+        color: gray;
+        margin-top: 10px;
+    }
+   
+    .card{
+        transition: all 0.25s;
+        overflow: hidden;
+    }
+    .card-img-overlay{
+        color: white;
+        opacity: 0;
+        margin-bottom: 0px;
+        margin-top: 7rem;
+        padding-top: 5rem;
+        display: inline-block;
+    }
+    .card-img-overlay:hover{
+        opacity: 1;
+        color: white;
+        background: rgba(0,0,0,0.5);
+        display: block;
+    }
+   
+}
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
